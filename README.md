@@ -14,5 +14,6 @@ Technologies used to build this app include but are not limited to the following
 * PostCSS, PurgeCSS, CSSNano, and Watch plugins to dynamically change and drastically reduce the size of the Tailwind.css file
 * JQuery.scrollto to scroll between sections with ease
 
-Some animations taken from https://animista.net, by Ana Travas
+Some animations taken from https://animista.net, by Ana Travas.
+
 Stock footage provided by Videvo, downloaded from https://www.videvo.net
