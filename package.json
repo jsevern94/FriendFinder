@@ -4,7 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "postcss main.css -o tailwind.css",
+    "watch": "watch \"npm run build:css\" ./app/public",
     "start": "node server.js"
   },
   "repository": {
@@ -19,7 +20,14 @@
   },
   "homepage": "https://github.com/jsevern94/FriendFinder#readme",
   "dependencies": {
+    "@fullhuman/postcss-purgecss": "^1.2.0",
+    "cssnano": "^4.1.10",
     "express": "^4.17.1",
-    "path": "^0.12.7"
+    "jquery.scrollto": "^2.1.2",
+    "path": "^0.12.7",
+    "postcss": "^7.0.17",
+    "postcss-cli": "^6.1.2",
+    "tailwindcss": "^1.0.4",
+    "watch": "^1.0.2"
   }
 }

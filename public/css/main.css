@@ -1,0 +1,87 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+.option:not(:first-child) {
+    -webkit-transition: opactiy .75s, -webkit-transform .75s, webkit-transform-origin .75s, webkit-filter .75s;
+    transition: opacity .75s, transform .75s, transform-origin .75s, filter .75s;
+    -webkit-transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
+            transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+  
+  .question-option:hover 
+  .option:not(:first-child) {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+            transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+  
+  .option:not(:first-child):nth-child(2) {
+    -webkit-transition-delay: 1400ms;
+            transition-delay: 1400ms;
+  }
+  
+  .option:not(:first-child):nth-child(3) {
+    -webkit-transition-delay: 1300ms;
+            transition-delay: 1300ms;
+  }
+  
+  .option:not(:first-child):nth-child(4) {
+    -webkit-transition-delay: 1200ms;
+            transition-delay: 1200ms;
+  }
+  
+  .option:not(:first-child):nth-child(5) {
+    -webkit-transition-delay: 1100ms;
+            transition-delay: 1100ms;
+  }
+  
+  .option:not(:first-child):nth-child(6) {
+    -webkit-transition-delay: 1000ms;
+            transition-delay: 1000ms;
+  }
+  
+  .question-option:hover 
+  .option:not(:first-child):nth-child(2) {
+    -webkit-transition-delay: 0ms;
+            transition-delay: 0ms;
+  }
+  
+  .question-option:hover 
+  .option:not(:first-child):nth-child(3) {
+    -webkit-transition-delay: 100ms;
+            transition-delay: 100ms;
+  }
+  
+  .question-option:hover 
+  .option:not(:first-child):nth-child(4) {
+    -webkit-transition-delay: 200ms;
+            transition-delay: 200ms;
+  }
+  
+  .question-option:hover 
+  .option:not(:first-child):nth-child(5) {
+    -webkit-transition-delay: 300ms;
+            transition-delay: 300ms;
+  }
+  
+  .question-option:hover 
+  .option:not(:first-child):nth-child(6) {
+    -webkit-transition-delay: 400ms;
+            transition-delay: 400ms; 
+  }

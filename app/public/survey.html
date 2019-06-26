@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron|Rock+Salt&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+    <link rel="stylesheet" href="/css/tailwind.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <title></title>
+</head>
+
+<body class="bg-cover bg-center bg-fixed overflow-hidden" style="background-image: url(/images/background3.png)">
+
+    <div id="all" class="flex flex-no-wrap">
+
+        <section id="section0" class="h-screen w-screen block flex-none">
+
+            <div class="text-center w-2/5 ml-20">
+                <div class="flex">
+                    <p class="text-4xl text-white w-1/2 my-24" style="font-family: 'Orbitron', cursive;">Name: </p>
+                    <input
+                        class="text-3xl appearance-none bg-transparent border-none w-full text-gray-900 ml-10 py-1 px-2 leading-tight focus:outline-none"
+                        style="font-family: 'Orbitron', cursive;" type="text" placeholder="John Smith" id="user-name"
+                        required>
+                </div>
+                <div class="flex">
+                    <p class="text-4xl text-white w-1/2 my-24" style="font-family: 'Orbitron', cursive;">Age: </p><input
+                        class="text-3xl appearance-none bg-transparent border-none w-full text-gray-900 ml-10 py-1 px-2 leading-tight focus:outline-none"
+                        style="font-family: 'Orbitron', cursive;" type="text" placeholder="99" id="user-age" required>
+                </div>
+                <div class="flex">
+                    <p class="text-4xl text-white w-1/2 my-24" style="font-family: 'Orbitron', cursive;">Profile Pic:
+                    </p>
+                    <input
+                        class="text-3xl appearance-none bg-transparent border-none w-full text-gray-900 ml-10 py-1 px-2 leading-tight focus:outline-none"
+                        style="font-family: 'Orbitron', cursive;" type="text" placeholder="image.jpg" id="user-image"
+                        required>
+                </div>
+                <button id="start-button"
+                    class="text-3xl tracking-wider bg-black hover:bg-pink-400 text-white py-2 px-4 border border-white hover:border-transparent rounded"
+                    style="font-family: 'Rock Salt', sans-serif;"><a href="#section1">Start</a></button>
+            </div>
+
+        </section>
+
+        <p class="text-purple-400 invisible line-through">text</p>
+
+        <section id="section1" class="h-screen w-screen block flex-none">
+
+
+            <h2 class="text-white text-5xl text-center mt-10" style="font-family: 'Rock Salt', cursive;">Do you watch
+                Netflix?</h2>
+
+            <div class="flex justify-center mt-10">
+
+                <div id="0" class="question-option text-white text-2xl w-1/3 h-12"
+                    style="font-family: 'Orbitron', cursive;">
+
+                    <p id="nav" class="option block cursor-pointer text-center select-none text-4xl">
+                        Select an Option
+                    </p>
+
+                    <a class="option block hover:text-gray-500 text-center py-10 select-none" value="1">Not at All</a>
+
+                    <a class="option block hover:text-gray-500 text-center py-10 select-none" value="2">Maybe a Little
+                        Bit</a>
+
+                    <a class="option block hover:text-gray-500 text-center py-10 select-none" value="3">If I Have
+                        Time</a>
+
+                    <a class="option block hover:text-gray-500 text-center py-10 select-none" value="4">I Love
+                        Netflix!</a>
+
+                    <a class="option block hover:text-gray-500 text-center py-10 select-none" value="5">I Never Stop
+                        Watching</a>
+
+                </div>
+
+            </div>
+
+            <div class="w-full absolute bottom-0 flex justify-center">
+                <button
+                    class="text-3xl tracking-wider bg-black hover:bg-pink-400 text-white py-2 px-4  mb-20 border border-white hover:border-transparent rounded"
+                    style="font-family: 'Rock Salt', sans-serif;"><a href="#section2">Next</a></button>
+            </div>
+
+        </section>
+
+
+        <section id="section2" class="h-screen w-screen block flex-none">
+
+            <h2 class="text-white text-5xl text-center mt-10" style="font-family: 'Rock Salt', cursive;">Do you like
+                parties?</h2>
+
+            <div class="flex justify-center mt-10">
+
+                <div id="1" class="question-option text-white text-2xl w-1/3 h-12"
+                    style="font-family: 'Orbitron', cursive;">
+
+                    <p id="nav" class="option block cursor-pointer text-center select-none text-4xl">
+                        Select an Option
+                    </p>
+
+                    <a class="option block hover:text-gray-500 text-center py-10 select-none" value="1">I Hate Them</a>
+
+                    <a class="option block hover:text-gray-500 text-center py-10 select-none" value="2">On Occasion</a>
+
+                    <a class="option block hover:text-gray-500 text-center py-10 select-none" value="3">From Time to
+                        Time</a>
+
+                    <a class="option block hover:text-gray-500 text-center py-10 select-none" value="4">I Love
+                        Partying!</a>
+
+                    <a class="option block hover:text-gray-500 text-center py-10 select-none" value="5">I Party
+                        Non-Stop</a>
+
+                </div>
+
+            </div>
+
+            <div class="w-full absolute bottom-0 flex justify-center">
+                <button
+                    class="text-3xl tracking-wider bg-black hover:bg-pink-400 text-white py-2 px-4  mb-20 border border-white hover:border-transparent rounded"
+                    style="font-family: 'Rock Salt', sans-serif;"><a href="#section3">Next</a></button>
+            </div>
+
+        </section>
+
+
+        <section id="section3" class="h-screen w-screen block flex-none">
+
+            <h2 class="text-white text-5xl text-center mt-10" style="font-family: 'Rock Salt', cursive;">Do you enjoy
+                traveling?</h2>
+
+            <div class="flex justify-center mt-10">
+
+                <div id="2" class="question-option text-white text-2xl w-1/3 h-12"
+                    style="font-family: 'Orbitron', cursive;">
+
+                    <p id="nav" class="option block cursor-pointer text-center select-none text-4xl">
+                        Select an Option
+                    </p>
+
+                    <a class="option block hover:text-gray-500 text-center py-10 select-none" value="1">I've Never Left
+                        My Hometown</a>
+
+                    <a class="option block hover:text-gray-500 text-center py-10 select-none" value="2">I've Been on a
+                        Few Vacations</a>
+
+                    <a class="option block hover:text-gray-500 text-center py-10 select-none" value="3">I've Spent Some
+                        Time Abroad</a>
+
+                    <a class="option block hover:text-gray-500 text-center py-10 select-none" value="4">I Travel Several
+                        Times Per Year</a>
+
+                    <a class="option block hover:text-gray-500 text-center py-10 select-none" value="5">I've Lived in
+                        Other Countries</a>
+
+                </div>
+
+            </div>
+
+            <div class="w-full absolute bottom-0 flex justify-center">
+                <button
+                    class="text-3xl tracking-wider bg-black hover:bg-pink-400 text-white py-2 px-4  mb-20 border border-white hover:border-transparent rounded"
+                    style="font-family: 'Rock Salt', sans-serif;"><a href="#section4">Next</a></button>
+            </div>
+
+        </section>
+
+
+        <section id="section4" class="h-screen w-screen block flex-none">
+
+            <h2 class="text-white text-5xl text-center mt-10" style="font-family: 'Rock Salt', cursive;">Do you daydream
+                often?</h2>
+
+            <div class="flex justify-center mt-10">
+
+                <div id="3" class="question-option text-white text-2xl w-1/3 h-12"
+                    style="font-family: 'Orbitron', cursive;">
+
+                    <p id="nav" class="option block cursor-pointer text-center select-none text-4xl">
+                        Select an Option
+                    </p>
+
+                    <a class="option block hover:text-gray-500 text-center py-10 select-none" value="1">No, I'm Always
+                        Present</a>
+
+                    <a class="option block hover:text-gray-500 text-center py-10 select-none" value="2">Only When I'm
+                        Bored</a>
+
+                    <a class="option block hover:text-gray-500 text-center py-10 select-none" value="3">Sometimes My
+                        Mind Drifts</a>
+
+                    <a class="option block hover:text-gray-500 text-center py-10 select-none" value="4">Most Days I
+                        Daydream a Little</a>
+
+                    <a class="option block hover:text-gray-500 text-center py-10 select-none" value="5">My Head is
+                        Always in the Clouds</a>
+
+                </div>
+
+            </div>
+
+            <div class="w-full absolute bottom-0 flex justify-center">
+                <button
+                    class="text-3xl tracking-wider bg-black hover:bg-pink-400 text-white py-2 px-4  mb-20 border border-white hover:border-transparent rounded"
+                    style="font-family: 'Rock Salt', sans-serif;"><a href="#section5">Next</a></button>
+            </div>
+
+        </section>
+
+
+        <section id="section5" class="h-screen w-screen block flex-none">
+
+            <h2 class="text-white text-5xl text-center mt-10" style="font-family: 'Rock Salt', cursive;">How much do you
+                enjoy music?</h2>
+
+            <div class="flex justify-center mt-10">
+
+                <div id="4" class="question-option text-white text-2xl w-1/3 h-12"
+                    style="font-family: 'Orbitron', cursive;">
+
+                    <p id="nav" class="option block cursor-pointer text-center select-none text-4xl">
+                        Select an Option
+                    </p>
+
+                    <a class="option block hover:text-gray-500 text-center py-10 select-none" value="1">Music Hurts My
+                        Head</a>
+
+                    <a class="option block hover:text-gray-500 text-center py-10 select-none" value="2">I Only Like One
+                        Genre</a>
+
+                    <a class="option block hover:text-gray-500 text-center py-10 select-none" value="3">I Listen to
+                        Whatever is on the Radio</a>
+
+                    <a class="option block hover:text-gray-500 text-center py-10 select-none" value="4">I Love All Kinds
+                        of Music</a>
+
+                    <a class="option block hover:text-gray-500 text-center py-10 select-none" value="5">I Listen to
+                        Music Constantly</a>
+
+                </div>
+
+            </div>
+
+            <div class="w-full absolute bottom-0 flex justify-center">
+                <button
+                    class="text-3xl tracking-wider bg-black hover:bg-pink-400 text-white py-2 px-4  mb-20 border border-white hover:border-transparent rounded"
+                    style="font-family: 'Rock Salt', sans-serif;"><a href="#section6">Next</a></button>
+            </div>
+
+        </section>
+
+
+        <section id="section6" class="h-screen w-screen block flex-none">
+
+            <h2 class="text-white text-5xl text-center mt-10" style="font-family: 'Rock Salt', cursive;">Do you like to
+                discuss philosophy?</h2>
+
+            <div class="flex justify-center mt-10">
+
+                <div id="5" class="question-option text-white text-2xl w-1/3 h-12"
+                    style="font-family: 'Orbitron', cursive;">
+
+                    <p id="nav" class="option block cursor-pointer text-center select-none text-4xl">
+                        Select an Option
+                    </p>
+
+                    <a class="option block hover:text-gray-500 text-center py-10 select-none" value="1">I'd Rather Eat
+                        Slugs</a>
+
+                    <a class="option block hover:text-gray-500 text-center py-10 select-none" value="2">Philosophy
+                        Doesn't Interest Me</a>
+
+                    <a class="option block hover:text-gray-500 text-center py-10 select-none" value="3">I Read Descartes
+                        Once</a>
+
+                    <a class="option block hover:text-gray-500 text-center py-10 select-none" value="4">I Love
+                        Philosphical Conversations</a>
+
+                    <a class="option block hover:text-gray-500 text-center py-10 select-none" value="5">Philosophy was
+                        My College Major</a>
+
+                </div>
+
+            </div>
+
+            <div class="w-full absolute bottom-0 flex justify-center">
+                <button
+                    class="text-3xl tracking-wider bg-black hover:bg-pink-400 text-white py-2 px-4  mb-20 border border-white hover:border-transparent rounded"
+                    style="font-family: 'Rock Salt', sans-serif;"><a href="#section7">Next</a></button>
+            </div>
+
+        </section>
+
+
+        <section id="section7" class="h-screen w-screen block flex-none">
+
+            <h2 class="text-white text-5xl text-center mt-10" style="font-family: 'Rock Salt', cursive;">Do you play or
+                watch sports?</h2>
+
+            <div class="flex justify-center mt-10">
+
+                <div id="6" class="question-option text-white text-2xl w-1/3 h-12"
+                    style="font-family: 'Orbitron', cursive;">
+
+                    <p id="nav" class="option block cursor-pointer text-center select-none text-4xl">
+                        Select an Option
+                    </p>
+
+                    <a class="option block hover:text-gray-500 text-center py-10 select-none" value="1">I Actively Avoid
+                        Sports</a>
+
+                    <a class="option block hover:text-gray-500 text-center py-10 select-none" value="2">I Watch from
+                        Time to Time</a>
+
+                    <a class="option block hover:text-gray-500 text-center py-10 select-none" value="3">I Watch Sports
+                        but Don't Play</a>
+
+                    <a class="option block hover:text-gray-500 text-center py-10 select-none" value="4">I've Played
+                        Sports All My Life</a>
+
+                    <a class="option block hover:text-gray-500 text-center py-10 select-none" value="5">I'm a
+                        Professional Athlete</a>
+
+                </div>
+
+            </div>
+
+            <div class="w-full absolute bottom-0 flex justify-center">
+                <button
+                    class="text-3xl tracking-wider bg-black hover:bg-pink-400 text-white py-2 px-4  mb-20 border border-white hover:border-transparent rounded"
+                    style="font-family: 'Rock Salt', sans-serif;"><a href="#section8">Next</a></button>
+            </div>
+
+        </section>
+
+
+        <section id="section8" class="h-screen w-screen block flex-none">
+
+            <h2 class="text-white text-5xl text-center mt-10" style="font-family: 'Rock Salt', cursive;">Do you follow
+                politics?</h2>
+
+            <div class="flex justify-center mt-10">
+
+                <div id="7" class="question-option text-white text-2xl w-1/3 h-12"
+                    style="font-family: 'Orbitron', cursive;">
+
+                    <p id="nav" class="option block cursor-pointer text-center select-none text-4xl">
+                        Select an Option
+                    </p>
+
+                    <a class="option block hover:text-gray-500 text-center py-10 select-none" value="1">What's a
+                        Politic?</a>
+
+                    <a class="option block hover:text-gray-500 text-center py-10 select-none" value="2">I Know the Names
+                        of a Few Politicians</a>
+
+                    <a class="option block hover:text-gray-500 text-center py-10 select-none" value="3">I Watch the News
+                        and I Vote</a>
+
+                    <a class="option block hover:text-gray-500 text-center py-10 select-none" value="4">I Follow
+                        Politics Very Closely</a>
+
+                    <a class="option block hover:text-gray-500 text-center py-10 select-none" value="5">I'm a
+                        Politician</a>
+
+                </div>
+
+            </div>
+
+            <div class="w-full absolute bottom-0 flex justify-center">
+                <button
+                    class="text-3xl tracking-wider bg-black hover:bg-pink-400 text-white py-2 px-4  mb-20 border border-white hover:border-transparent rounded"
+                    style="font-family: 'Rock Salt', sans-serif;"><a href="#section9">Next</a></button>
+            </div>
+
+        </section>
+
+
+        <section id="section9" class="h-screen w-screen block flex-none">
+
+            <h2 class="text-white text-5xl text-center mt-10" style="font-family: 'Rock Salt', cursive;">How often do
+                you spend time outdoors?</h2>
+
+            <div class="flex justify-center mt-10">
+
+                <div id="8" class="question-option text-white text-2xl w-1/3 h-12"
+                    style="font-family: 'Orbitron', cursive;">
+
+                    <p id="nav" class="option block cursor-pointer text-center select-none text-4xl">
+                        Select an Option
+                    </p>
+
+                    <a class="option block hover:text-gray-500 text-center py-10 select-none" value="1">I Can't Remember
+                        the Last Time I Left My House</a>
+
+                    <a class="option block hover:text-gray-500 text-center py-10 select-none" value="2">Only on the Way
+                        to School or Work</a>
+
+                    <a class="option block hover:text-gray-500 text-center py-10 select-none" value="3">I Go for a Walk
+                        Every Now and Then</a>
+
+                    <a class="option block hover:text-gray-500 text-center py-10 select-none" value="4">I Go Hiking
+                        Every Chance I Get</a>
+
+                    <a class="option block hover:text-gray-500 text-center py-10 select-none" value="5">I'm Homeless</a>
+
+                </div>
+
+            </div>
+
+            <div class="w-full absolute bottom-0 flex justify-center">
+                <button
+                    class="text-3xl tracking-wider bg-black hover:bg-pink-400 text-white py-2 px-4  mb-20 border border-white hover:border-transparent rounded"
+                    style="font-family: 'Rock Salt', sans-serif;"><a href="#section10">Next</a></button>
+            </div>
+
+        </section>
+
+
+        <section id="section10" class="h-screen w-screen block flex-none">
+
+            <h2 class="text-white text-5xl text-center mt-10" style="font-family: 'Rock Salt', cursive;">Do you enjoy
+                art?</h2>
+
+            <div class="flex justify-center mt-10">
+
+                <div id="9" class="question-option text-white text-2xl w-1/3 h-12"
+                    style="font-family: 'Orbitron', cursive;">
+
+                    <p id="nav" class="option block cursor-pointer text-center select-none text-4xl">
+                        Select an Option
+                    </p>
+
+                    <a class="option block hover:text-gray-500 text-center py-10 select-none" value="1">I Don't
+                        Understand the Appeal</a>
+
+                    <a class="option block hover:text-gray-500 text-center py-10 select-none" value="2">I Can Appreciate
+                        it I guess</a>
+
+                    <a class="option block hover:text-gray-500 text-center py-10 select-none" value="3">You Can Find Me
+                        in a Museum on My Days Off</a>
+
+                    <a class="option block hover:text-gray-500 text-center py-10 select-none" value="4">My Walls are
+                        Covered in Paintings</a>
+
+                    <a class="option block hover:text-gray-500 text-center py-10 select-none" value="5">I'm an Artist
+                        Myself</a>
+
+                </div>
+
+            </div>
+
+            <div class="w-full absolute bottom-0 flex justify-center">
+                <button id="finish-button"
+                    class="text-3xl tracking-wider bg-black hover:bg-pink-400 text-white py-2 px-4  mb-20 border border-white hover:border-transparent rounded select-none"
+                    style="font-family: 'Rock Salt', sans-serif;">Finish</button>
+            </div>
+
+        </section>
+
+
+    </div>
+
+
+    <script type="text/javascript">
+
+        var userData = {
+            name: null,
+            age: null,
+            photo: null,
+            values: []
+        };
+
+        $(document).on("click", "#start-button", function () {
+            userData.name = $("#user-name").val();
+            userData.age = $("#user-age").val();
+            userData.photo = $("#user-image").val();
+        })
+
+
+        $(document).on("click", ".question-option a", function () {
+            $(".question-option a").addClass("line-through").not(this).removeClass("line-through");
+            $(".question-option a").removeClass("hover:text-gray-500").not(this).addClass("hover:text-gray-500");
+            $(".question-option a").addClass("text-purple-400").not(this).removeClass("text-purple-400");
+            var id = $(this).closest("div").prop("id");
+            var value = $(this).attr("value");
+            userData.values[id] = value;
+        });
+
+        $(document).on("click", "#finish-button", function () {
+            
+            var fullData = true;
+
+            if (userData.name && userData.age && userData.photo) {
+                for (var i = 0; i < 10; i++) {
+                    if (userData.values[i]) {
+                        console.log("value present")
+                    }
+                    else {
+                        alert("Please choose an option for all questions.")
+                        var section = i + 1
+                        $(window).scrollTo(`#section${section}`)
+                        data = false
+                        return;
+                    }
+                }
+                if (fullData) {
+                    $.post("/api/friends", userData, function(data) {
+                        console.log("Post Complete");
+                        console.log(data);
+                    });
+                }
+
+            }
+            else {
+                alert("Don't forget to input your name, age, and a link to a photo.")
+                window.location.hash = '';
+                $(window).scrollTo("#section0");
+            }
+        })
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
