@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "build:css": "postcss main.css -o tailwind.css",
+    "build:css": "postcss app/public/css/main.css -o app/public/css/tailwind.css",
     "watch": "watch \"npm run build:css\" ./app/public",
     "start": "node server.js"
   },
